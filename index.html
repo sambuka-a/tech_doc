@@ -39,14 +39,14 @@
                     <p>HTML, or HyperText Markup Language, is a markup language used to describe the structure of a web page. It uses a special syntax or notation to organize and give information about the page to the browser. Elements usually have opening and closing tags that surround and give meaning to content. For example, there are different tag options to place around text to show whether it is a heading, a paragraph, or a list.</p>
                     <p>For example:</p>
                     <pre class="code__block"><code>
-                        &lt;h1&gt;Top level heading: Maybe a page title&lt;/h1&gt;
-                        &lt;p&gt;A paragraph of text. Some information we would like to communicate to the viewer. This can be as long or short as we would like.&lt;/p&gt;
+    &lt;h1&gt;Top level heading: Maybe a page title&lt;/h1&gt;
+        &lt;p&gt;A paragraph of text. Some information we would like to communicate to the viewer. This can be as long or short as we would like.&lt;/p&gt;
                         
-                        &lt;ol&gt;
-                            &lt;li&gt;Number one on the list&lt;/li&gt;
-                            &lt;li&gt;Number two&lt;/li&gt;
-                            &lt;li&gt;A third item&lt;/li&gt;
-                        &lt;/ol&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Number one on the list&lt;/li&gt;
+                &lt;li&gt;Number two&lt;/li&gt;
+                &lt;li&gt;A third item&lt;/li&gt;
+            &lt;/ol&gt;
                     </code></pre>
                     <p>Becomes:</p>
                     <div class="result">
@@ -73,10 +73,10 @@
                     <p>These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The <strong><em>main</em></strong> HTML5 tag helps search engines and other developers find the main content of your page.</p>
                     <p>Example usage, a <strong><em>main</strong></em> element with two child elements nested inside it:</p>
                     <pre class="code__block"><code>
-                        &lt;main&gt;
-                            &lt;h1&gt;Hello World!&lt;/h1&gt;
-                            &lt;p&gt;Hello World!&lt;/p&gt;
-                            &lt;/main&gt;
+    &lt;main&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+        &lt;p&gt;Hello World!&lt;/p&gt;
+    &lt;/main&gt;
                     </code></pre>
                     <br>
                     <p><strong>NOTE:</strong> Many of the new HTML5 tags and their benefits are covered in the Applied Accessibility section.</p>
@@ -87,7 +87,7 @@
                     <p>You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.</p>
                     <p>An example of this would be:</p>
                     <pre class="code__block"><code>
-                        &lt;img src="https://www.freecatphotoapp.com/your-image.jpg"&gt;
+    &lt;img src="https://www.freecatphotoapp.com/your-image.jpg"&gt;
                     </code></pre>
                     <br>
                     <p><strong>NOTE!</strong> That img elements are self-closing.</p>
@@ -101,7 +101,7 @@
                     <p>You can make elements into links by nesting them within an <strong><em>a</em></strong> element.</p>
                     <p>An example of this would be:</p>
                     <pre class="code__block"><code>
-                        &lt;a href="#"&gt;&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."&gt;&lt;/a&gt;
+    &lt;a href="#"&gt;&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."&gt;&lt;/a&gt;
                     </code></pre>
                     <br>
                     <p>Remember to use <strong><em>#</em></strong> as your <strong><em>a</em></strong> element's <strong><em>href</em></strong> property in order to turn it into a dead link.</p>
@@ -112,7 +112,7 @@
                     <p>You can use <strong><em>a</em></strong> <em>(anchor)</em> elements to link to content outside of your web page.</p>
                     <p><strong><em>a</em></strong> elements need a destination web address called an href attribute. They also need anchor text. Here's an example:</p>
                     <pre class="code__block"><code>
-                        &lt;a href="https://freecodecamp.org">this links to freecodecamp.org&lt;/a&gt;
+    &lt;a href="https://freecodecamp.org">this links to freecodecamp.org&lt;/a&gt;
                     </code></pre>
                     <br>
                     <p>Then your browser will display the text <strong>"this links to freecodecamp.org"</strong> as a link you can click. And that link will take you to the web address <a href="https://www.freecodecamp.org"><strong>https://www.freecodecamp.org</strong></a>.</p>
@@ -123,9 +123,9 @@
                     <p><strong><em>a</em></strong> <em>(anchor)</em> elements can also be used to create internal links to jump to different sections within a webpage.</p>
                     <p>To create an internal link, you assign a link's <strong><em>href</em></strong> attribute to a hash symbol <strong><em>#</em></strong> plus the value of the <strong><em>id</em></strong> attribute for the element that you want to internally link to, usually further down the page. You then need to add the same <strong><em>id</em></strong> attribute to the element you are linking to. An <strong><em>id</em></strong> is an attribute that uniquely describes an element.</p>
                     <pre class="code__block"><code>
-                        &lt;a href="#contacts-header">Contacts&lt;/a&gt;
-                        ...
-                        &lt;h2&gt id="contacts-header">Contacts&lt;/h2&gt;
+    &lt;a href="#contacts-header">Contacts&lt;/a&gt;
+    ...
+    &lt;h2&gt id="contacts-header">Contacts&lt;/h2&gt;
                     </code></pre>
                     <br>
                     <p>When users click the Contacts link, they'll be taken to the section of the webpage with the <strong><em>Contact</em></strong> header element.</p>
@@ -145,10 +145,10 @@
                     <p>Ordered lists start with an opening <strong><em>&lt;ol&gt;</em></strong> element, followed by any number of <strong><em>&lt;li&gt;</em></strong> elements. Finally, ordered lists are closed with the <strong><em>&lt;/ol&gt;</em></strong> tag.</p>
                     <p>For example:</p>
                     <pre class="code__block"><code>
-                        &lt;ol&gt;
-                            &lt;li&gt;Garfield&lt;/li&gt;
-                            &lt;li&gt;Sylvester&lt;/li&gt;
-                        &lt;/ol&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Garfield&lt;/li&gt;
+        &lt;li&gt;Sylvester&lt;/li&gt;
+    &lt;/ol&gt;
                     </code></pre>
                     <br>
                     <p>would create a numbered list of "Garfield" and "Sylvester".</p>
@@ -159,7 +159,7 @@
                     <p>You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <strong><em>form</em></strong> element.</p>
                     <p>For example:</p>
                     <pre class="code__block"><code>
-                        &lt;form form action="/url-where-you-want-to-submit-form-data">&lt;/form&gt;
+    &lt;form form action="/url-where-you-want-to-submit-form-data">&lt;/form&gt;
                     </code></pre>
                     <br>
                     <p>Nest the existing input element inside a form element and assign "https://freecatphotoapp.com/submit-cat-photo" to the action attribute of the <strong><em>form</em></strong> element.</p>
@@ -171,16 +171,16 @@
                     <p>Radio buttons are a type of <strong><em>input</em></strong>.</p>
                     <p>Here's an example of a radio button:</p>
                     <pre class="code__block"><code>
-                        &lt;label&gt;
-                            &lt;input type="radio" name="indoor-outdoor">Indoor
-                        &lt;/label&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="indoor-outdoor">Indoor
+    &lt;/label&gt;
                     </code></pre>
                     <br>
                     <p>It is considered best practice to set a <strong><em>for</em></strong> attribute on the <strong><em>label</em></strong> element, with a value that matches the value of the <strong><em>id</em></strong> attribute of the <strong><em>input</em></strong> element. This allows assistive technologies to create a linked relationship between the label and the child <strong><em>input</em></strong> element. For example:</p>
                     <pre class="code__block"><code>
-                        &lt;label for="indoor"&gt;
-                            &lt;input id="indoor" type="radio" name="indoor-outdoor">Indoor
-                        &lt;/label&gt;
+    &lt;label for="indoor"&gt;
+        &lt;input id="indoor" type="radio" name="indoor-outdoor">Indoor
+    &lt;/label&gt;
                     </code></pre>
                     <br>
                     <hr>
@@ -194,7 +194,7 @@
                     <p>It is considered best practice to explicitly define the relationship between a checkbox <strong><em>input</em></strong> and its corresponding <strong><em>label</em></strong> by setting the <strong><em>for</em></strong> attribute on the <strong><em>label</em></strong> element to match the <strong><em>id</em></strong> attribute of the associated <strong><em>input</em></strong> element.</p>
                     <p>Here's an example of a checkbox:</p>
                     <pre class="code__block"><code>
-                        &lt;label for="loving"&gt;&lt;input id="loving" type="checkbox" name="personality"&gt; Loving&lt;/form&gt;
+    &lt;label for="loving"&gt;&lt;input id="loving" type="checkbox" name="personality"&gt; Loving&lt;/form&gt;
                     </code></pre>
                     <br>
                     <hr>
@@ -207,10 +207,10 @@
                     <p>Next, the rest of your HTML code needs to be wrapped in html tags. The opening <strong>&lt;html&gt;</strong> goes directly below the <strong>&lt;!DOCTYPE html&gt;</strong> line, and the closing <strong>&lt;/html&gt;</strong> goes at the end of the page.</p>
                     <p>Here's an example of the page structure:</p>
                     <pre class="code__block"><code>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;!-- Your HTML code goes here --&gt;
-                        &lt;/html&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;!-- Your HTML code goes here --&gt;
+    &lt;/html&gt;
                     </code></pre>
                     <br>
                     <hr>
@@ -221,15 +221,15 @@
                     <p>Metadata elements, such as <strong><em>link</em></strong>, <strong><em>meta</em></strong>, <strong><em>title</em></strong>, and <strong><em>style</em></strong>, typically go inside the head element.</p>
                     <p>Here's an example of a page's layout:</p>
                     <pre class="code__block"><code>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;head&gt;
-                                &lt;!-- Metadata elements --&gt;
-                            &lt;/head&gt;
-                            &lt;body&gt;
-                                &lt;!-- Page content --&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;!-- Metadata elements --&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;!-- Page content --&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
                     </code></pre>
                     <br>
                     <hr>
