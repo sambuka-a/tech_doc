@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>GridTechDoc</title>
+</head>
+<body>
+    <div class="wrapper">    
+        <div class="grid-container">
+            <div class="header">HTML Documentation     
+            </div>
+            <div class="navbar">
+                <nav class="side__nav">
+                    <h2 id="title">Title</h2>
+                    <ul class="nav__list">
+                        <li><a href="#basic">Introduction</a></li>
+                        <li><a href="#comment">Comment out HTML</a></li>
+                        <li><a href="#html5">HTML5 Elements</a></li>
+                        <li><a href="#imgadd">Adding Images</a></li>
+                        <li><a href="#imglink">Image Link</a></li>
+                        <li><a href="#extlink">External Link</a></li>
+                        <li><a href="#intlink">Internal Link</a></li>
+                        <li><a href="#dedlink">Dead Links</a></li>
+                        <li><a href="#lists">Lists</a></li>
+                        <li><a href="#form">Forms</a></li>
+                        <li><a href="#radio">Radio Buttons</a></li>
+                        <li><a href="#chkbox">Checkboxes</a></li>
+                        <li><a href="#doctype">Declare Doctype</a></li>
+                        <li><a href="#headbody">Head / Body</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main__content">    
+                <div id="basic" class="description">
+                    <h2>Introduction to Basic HTML & HTML5</h2>
+                    <p>HTML, or HyperText Markup Language, is a markup language used to describe the structure of a web page. It uses a special syntax or notation to organize and give information about the page to the browser. Elements usually have opening and closing tags that surround and give meaning to content. For example, there are different tag options to place around text to show whether it is a heading, a paragraph, or a list.</p>
+                    <p>For example:</p>
+                    <pre class="code__block"><code>
+                        &lt;h1&gt;Top level heading: Maybe a page title&lt;/h1&gt;
+                        &lt;p&gt;A paragraph of text. Some information we would like to communicate to the viewer. This can be as long or short as we would like.&lt;/p&gt;
+                        
+                        &lt;ol&gt;
+                            &lt;li&gt;Number one on the list&lt;/li&gt;
+                            &lt;li&gt;Number two&lt;/li&gt;
+                            &lt;li&gt;A third item&lt;/li&gt;
+                        &lt;/ol&gt;
+                    </code></pre>
+                    <p>Becomes:</p>
+                    <div class="result">
+                        <h1>Top level heading: Maybe a page title</h1>
+                        <p>A paragraph of text. Some information we would like to communicate to the viewer. This can be as long or short as we would like.</p>
+                        <ol>                
+                            <li>Number one on the list</li>
+                            <li>Number two</li>
+                            <li>A third item</li>
+                        </ol>
+                    </div>
+                    <p>The HyperText part of HTML comes from the early days of the web and its original use case. Pages usually contained static documents that contained references to other documents. These references contained hypertext links used by the browser to navigate to the reference document so the user could read the reference document without having to manually search for it.
+                        As web pages and web applications grow more complex, the W3 Consortium updates the HTML specification to ensure that a webpage can be shown reliably on any browser. The latest version of HTML is HTML5.</p>
+                    <hr>
+                </div>
+                <div id="comment" class="description">
+                    <h2>Comment out HTML</h2>
+                    <p>Remember that in order to start a comment, you need to use &lt;!-- and to end a comment, you need to use --&gt;</p>
+                    <hr>
+                </div>
+                <div id="html5" class="description">
+                    <h2>Introduction to HTML5 Elements</h2>
+                    <p>HTML5 introduces more descriptive HTML tags. These include <strong><em>main, header, footer, nav, video, article, section</em></strong> and others.</p>
+                    <p>These tags give a descriptive structure to your HTML, make your HTML easier to read, and help with Search Engine Optimization (SEO) and accessibility. The <strong><em>main</em></strong> HTML5 tag helps search engines and other developers find the main content of your page.</p>
+                    <p>Example usage, a <strong><em>main</strong></em> element with two child elements nested inside it:</p>
+                    <pre class="code__block"><code>
+                        &lt;main&gt;
+                            &lt;h1&gt;Hello World!&lt;/h1&gt;
+                            &lt;p&gt;Hello World!&lt;/p&gt;
+                            &lt;/main&gt;
+                    </code></pre>
+                    <br>
+                    <p><strong>NOTE:</strong> Many of the new HTML5 tags and their benefits are covered in the Applied Accessibility section.</p>
+                    <hr>
+                </div>
+                <div id="imgadd" class="description">
+                    <h2>Add Images to Your Website</h2>
+                    <p>You can add images to your website by using the img element, and point to a specific image's URL using the src attribute.</p>
+                    <p>An example of this would be:</p>
+                    <pre class="code__block"><code>
+                        &lt;img src="https://www.freecatphotoapp.com/your-image.jpg"&gt;
+                    </code></pre>
+                    <br>
+                    <p><strong>NOTE!</strong> That img elements are self-closing.</p>
+                    <p>All img elements must have an alt attribute. The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.</p>
+                    <p>Note: If the image is purely decorative, using an empty alt attribute is a best practice.</p>
+                    <p>Ideally the alt attribute should not contain special characters unless needed.</p>
+                    <hr>                         
+                </div>
+                <div id="imglink" class="description">
+                    <h2>Turn an Image into a Link</h2>
+                    <p>You can make elements into links by nesting them within an <strong><em>a</em></strong> element.</p>
+                    <p>An example of this would be:</p>
+                    <pre class="code__block"><code>
+                        &lt;a href="#"&gt;&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."&gt;&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <p>Remember to use <strong><em>#</em></strong> as your <strong><em>a</em></strong> element's <strong><em>href</em></strong> property in order to turn it into a dead link.</p>
+                    <hr>                         
+                </div>
+                <div id="extlink" class="description">
+                    <h2>Link to External Pages with Anchor Elements</h2>
+                    <p>You can use <strong><em>a</em></strong> <em>(anchor)</em> elements to link to content outside of your web page.</p>
+                    <p><strong><em>a</em></strong> elements need a destination web address called an href attribute. They also need anchor text. Here's an example:</p>
+                    <pre class="code__block"><code>
+                        &lt;a href="https://freecodecamp.org">this links to freecodecamp.org&lt;/a&gt;
+                    </code></pre>
+                    <br>
+                    <p>Then your browser will display the text <strong>"this links to freecodecamp.org"</strong> as a link you can click. And that link will take you to the web address <a href="https://www.freecodecamp.org"><strong>https://www.freecodecamp.org</strong></a>.</p>
+                    <hr>
+                </div>
+                <div id="intlink" class="description">
+                    <h2>Link to Internal Sections of a Page with Anchor Elements</h2>
+                    <p><strong><em>a</em></strong> <em>(anchor)</em> elements can also be used to create internal links to jump to different sections within a webpage.</p>
+                    <p>To create an internal link, you assign a link's <strong><em>href</em></strong> attribute to a hash symbol <strong><em>#</em></strong> plus the value of the <strong><em>id</em></strong> attribute for the element that you want to internally link to, usually further down the page. You then need to add the same <strong><em>id</em></strong> attribute to the element you are linking to. An <strong><em>id</em></strong> is an attribute that uniquely describes an element.</p>
+                    <pre class="code__block"><code>
+                        &lt;a href="#contacts-header">Contacts&lt;/a&gt;
+                        ...
+                        &lt;h2&gt id="contacts-header">Contacts&lt;/h2&gt;
+                    </code></pre>
+                    <br>
+                    <p>When users click the Contacts link, they'll be taken to the section of the webpage with the <strong><em>Contact</em></strong> header element.</p>
+                    <hr>
+                </div>
+                <div id="dedlink" class="description">
+                    <h2>Make Dead Links Using the Hash Symbol</h2>
+                    <p>Sometimes you want to add <strong><em>a</em></strong> elements to your website before you know where they will link.</p>
+                    <p>This is also handy when you're changing the behavior of a link using <strong><em>JavaScript</em></strong>, which we'll learn about later.</p>
+                    <p>Replace the <strong><em>href</em></strong> attribute value with a <strong><em>#</em></strong>, also known as a hash symbol, to create a dead link.</p>
+                    <p>For example: <strong><em>href="#"</em></strong></p>
+                    <hr>
+                </div>
+                <div id="lists" class="description">
+                    <h2>Create an Ordered List</h2>
+                    <p>HTML has another special element for creating ordered lists, or numbered lists.</p>
+                    <p>Ordered lists start with an opening <strong><em>&lt;ol&gt;</em></strong> element, followed by any number of <strong><em>&lt;li&gt;</em></strong> elements. Finally, ordered lists are closed with the <strong><em>&lt;/ol&gt;</em></strong> tag.</p>
+                    <p>For example:</p>
+                    <pre class="code__block"><code>
+                        &lt;ol&gt;
+                            &lt;li&gt;Garfield&lt;/li&gt;
+                            &lt;li&gt;Sylvester&lt;/li&gt;
+                        &lt;/ol&gt;
+                    </code></pre>
+                    <br>
+                    <p>would create a numbered list of "Garfield" and "Sylvester".</p>
+                    <hr>
+                </div>    
+                <div id="form" class="description">
+                    <h2>Create a Form Element</h2>
+                    <p>You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action on your <strong><em>form</em></strong> element.</p>
+                    <p>For example:</p>
+                    <pre class="code__block"><code>
+                        &lt;form form action="/url-where-you-want-to-submit-form-data">&lt;/form&gt;
+                    </code></pre>
+                    <br>
+                    <p>Nest the existing input element inside a form element and assign "https://freecatphotoapp.com/submit-cat-photo" to the action attribute of the <strong><em>form</em></strong> element.</p>
+                    <hr>
+                </div>
+                <div id="radio" class="description">
+                    <h2>Create a Set of Radio Buttons</h2>
+                    <p>You can use <em>radio buttons</em> for questions where you want the user to only give you one answer out of multiple options.</p>
+                    <p>Radio buttons are a type of <strong><em>input</em></strong>.</p>
+                    <p>Here's an example of a radio button:</p>
+                    <pre class="code__block"><code>
+                        &lt;label&gt;
+                            &lt;input type="radio" name="indoor-outdoor">Indoor
+                        &lt;/label&gt;
+                    </code></pre>
+                    <br>
+                    <p>It is considered best practice to set a <strong><em>for</em></strong> attribute on the <strong><em>label</em></strong> element, with a value that matches the value of the <strong><em>id</em></strong> attribute of the <strong><em>input</em></strong> element. This allows assistive technologies to create a linked relationship between the label and the child <strong><em>input</em></strong> element. For example:</p>
+                    <pre class="code__block"><code>
+                        &lt;label for="indoor"&gt;
+                            &lt;input id="indoor" type="radio" name="indoor-outdoor">Indoor
+                        &lt;/label&gt;
+                    </code></pre>
+                    <br>
+                    <hr>
+                </div>
+                <div id="chkbox" class="description">
+                    <h2>Create a Set of Checkboxes</h2>
+                    <p>Forms commonly use checkboxes for questions that may have more than one answer.</p>
+                    <p>Checkboxes are a type of <strong><em>input</em></strong>.</p>
+                    <p>Each of your checkboxes can be nested within its own <strong><em>label</em></strong> element. By wrapping an <strong><em>input</em></strong> element inside of a <strong><em>label</em></strong> element it will automatically associate the checkbox input with the label element surrounding it.</p>
+                    <p>All related checkbox inputs should have the same <strong><em>name</em></strong> attribute.</p>
+                    <p>It is considered best practice to explicitly define the relationship between a checkbox <strong><em>input</em></strong> and its corresponding <strong><em>label</em></strong> by setting the <strong><em>for</em></strong> attribute on the <strong><em>label</em></strong> element to match the <strong><em>id</em></strong> attribute of the associated <strong><em>input</em></strong> element.</p>
+                    <p>Here's an example of a checkbox:</p>
+                    <pre class="code__block"><code>
+                        &lt;label for="loving"&gt;&lt;input id="loving" type="checkbox" name="personality"&gt; Loving&lt;/form&gt;
+                    </code></pre>
+                    <br>
+                    <hr>
+                </div>
+                <div id="doctype" class="description">
+                    <h2>Declare the Doctype of an HTML Document</h2>
+                    <p>The challenges so far have covered specific HTML elements and their uses. However, there are a few elements that give overall structure to your page, and should be included in every HTML document.</p>
+                    <p>At the top of your document, you need to tell the browser which version of HTML your page is using. HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous versions of the language.</p>
+                    <p>You tell the browser this information by adding the <strong>&lt;!DOCTYPE ...&gt;</strong> tag on the first line, where the ... part is the version of HTML. For HTML5, you use <strong>&lt;!DOCTYPE html&gt;</strong>.</p>
+                    <p>Next, the rest of your HTML code needs to be wrapped in html tags. The opening <strong>&lt;html&gt;</strong> goes directly below the <strong>&lt;!DOCTYPE html&gt;</strong> line, and the closing <strong>&lt;/html&gt;</strong> goes at the end of the page.</p>
+                    <p>Here's an example of the page structure:</p>
+                    <pre class="code__block"><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                            &lt;!-- Your HTML code goes here --&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+                    <br>
+                    <hr>
+                </div>
+                <div id="headbody" class="description">
+                    <h2>Define the Head and Body of an HTML Document</h2>
+                    <p>You can add another level of organization in your HTML document within the <strong><em>html</em></strong> tags with the <strong><em>head</em></strong> and <strong><em>body</em></strong> elements. Any markup with information about your page would go into the <strong><em>head</em></strong> tag. Then any markup with the content of the page (what displays for a user) would go into the <strong><em>body</em></strong> tag.</p>
+                    <p>Metadata elements, such as <strong><em>link</em></strong>, <strong><em>meta</em></strong>, <strong><em>title</em></strong>, and <strong><em>style</em></strong>, typically go inside the head element.</p>
+                    <p>Here's an example of a page's layout:</p>
+                    <pre class="code__block"><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;!-- Metadata elements --&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;!-- Page content --&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+            <div class="footer">Copyright FreeCodeCamp 2020
+            </div>
+        </div>
+    </div>
+</body>
+</html>
